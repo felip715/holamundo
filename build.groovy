@@ -42,7 +42,7 @@ pipeline{
                     pwd
                     hostname
                     whoami
-                    /home/jenkins/apache-maven-3.6.3/bin/mvn package
+                    /home/jenkins/apache-maven-3.6.3/bin/mvn -e package
                 '''
             }
         }
