@@ -32,7 +32,7 @@ pipeline{
         }
         stage('Build artifact'){
             agent {
-                label 'master'
+                label 'host_agent_P2'
             }
             steps{
                 sh '''
