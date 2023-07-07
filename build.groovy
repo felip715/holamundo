@@ -39,6 +39,8 @@ pipeline{
                     #mvn clean install
                     echo $JAVA_HOME
                     pwd
+                    hostname
+                    whoami
                     /home/jenkins/apache-maven-3.6.3/bin/mvn package
                 '''
             }
