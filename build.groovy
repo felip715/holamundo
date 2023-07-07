@@ -38,6 +38,7 @@ pipeline{
                 sh '''
                     #mvn clean install
                     echo $JAVA_HOME
+                    echo $M2_HOME
                     pwd
                     hostname
                     whoami
