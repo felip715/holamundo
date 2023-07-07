@@ -1,6 +1,6 @@
 pipeline{
     agent {
-         label 'master'
+         label 'host_agent_P2'
     }
     /*
     tools {
