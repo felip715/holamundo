@@ -50,6 +50,10 @@ pipeline{
                 label 'master'
             }
             steps{
+                sh '''                    
+                    hostname
+                    whoami
+                '''
                 script{
                     pom = readMavenPom(file: 'pom.xml')
                     filesByGlob = findFiles(glob: "target/*.${pom.packaging}")
